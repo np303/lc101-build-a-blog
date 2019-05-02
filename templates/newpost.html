@@ -4,11 +4,11 @@
     
 
 <h1>Add a New Post</h1>
-    <form action="/newpost" method="POST">
+    <form method="POST">
         <label>
             New Blog Entry:
-            <input type="text" name='post' />
-            <span class="error">{{posterror}}</span>
+            <input type="text" name='posttitle' minlength="1" required/>
+            <input type="text" name='post' minlength="1" required/>
         </label>
         <input type="submit" value='Add Post' />
     </form>
@@ -16,6 +16,8 @@
     <hr>
 
     
+  
+      
 
    
 {% endblock %}

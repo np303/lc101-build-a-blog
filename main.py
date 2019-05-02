@@ -33,20 +33,17 @@ def index():
 
 @app.route('/newpost', methods=['POST', 'GET'])
 def newpost():
+    posterror = ""
 
     if request.method == 'POST':
             
         post = request.form['post']
-        posterror = ""
+        posts.append(post)
+        
+        
+        return render_template('blog.html', title="fromnewpost", posts=posts)
 
-        if not post:
-            posterror = "You gotta say something!"
-            return render_template("newpost.html", title="ERROR", posterror=posterror)
-
-        #    return render_template("newpost.html", title="go", posts=posts)
-
-    else:
-            return render_template("blog.html", title="WTF", posts=posts)
+    return render_template("newpost.html", title="WTF", posterror=posterror)
                 
 
 
