@@ -13,12 +13,14 @@
     <p>No posts yet</p>
     {% else %}
 
-        <ul>
-            {% for post in posts %}
-            <li>{{post}}</li>
+       
+            {% for blog in posts %}
+            <h3><a href="./blog?id={{blog.id}}">{{blog.title}}</a></h3>
+            <p>{{blog.post}}</p>
+            <hr>
             {% endfor %}
-        </ul>
-<hr>
+        
+
     {% endif %}
 
 

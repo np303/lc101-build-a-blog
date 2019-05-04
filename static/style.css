@@ -1,0 +1,25 @@
+header {
+    position: fixed;
+    width: 100%;
+    height: 60%;
+    background: #2F3849;
+}    
+
+body {
+	/* Old browsers */
+	background: rgb(155, 156, 156);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-linear-gradient(-46544565deg, rgb(215, 217, 219), rgb(214, 223, 240));
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(90000000deg, rgb(179, 224, 218), rgb(206, 215, 231));
+	margin: 0;
+    padding: 0;
+}    
+
+
+h1 {
+    width: 100%;
+    height: 60%;
+    color: blue
+
+}
