@@ -8,8 +8,13 @@
 </nav>
 
 <!-- we get the title and post from BLOGPOST, created in the function, this will pull anything from the db. -->
-<h1>{{blogpost.title}}</h1>
-<p>{{blogpost.post}}</p>
+<div class="indblogtitle">
+<p>{{blogpost.title}}</p>
+</div>
+
+<div class="indblogpost">
+{{blogpost.post}}
+</div>
     
     <hr>
 

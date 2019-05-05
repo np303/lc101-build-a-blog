@@ -11,8 +11,8 @@ db = SQLAlchemy(app)
 class Blog(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(120))
-    post = db.Column(db.String(120))
+    title = db.Column(db.Text())
+    post = db.Column(db.Text())
 
     def __init__(self, title, post):
         self.title = title
@@ -40,7 +40,7 @@ def index():
 def newpost():
     
     posterror = ""
-    allblogposts = Blog.query.all()
+    
 
     if request.method == 'POST':
 
