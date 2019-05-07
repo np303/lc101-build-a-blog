@@ -9,6 +9,8 @@ body {
 	background: linear-gradient(360deg, rgb(46, 103, 156), rgb(18, 39, 77));
 	margin: 0;
     padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }    
 
 
